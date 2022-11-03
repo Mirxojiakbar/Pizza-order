@@ -122,6 +122,17 @@ $('.btn_1').addEventListener('click',()=>{
     $('.tfcm').style.display = 'inline-block'
     $('.thcm').style.display = 'none'
     $('.thfcm').style.display = 'none'
+
+    $('.btn_1').style.border = '2px solid white'
+    $('.btn_2').style.border = '2px solid red'
+    $('.btn_3').style.border = '2px solid red'
+    $('.btn_1').style.color='white'
+    $('.btn_2').style.color='red'
+    $('.btn_3').style.color='red'
+    
+    $('.btn_1').style.transition= '0.2s'
+    $('.btn_2').style.transition= '0.2s'
+    $('.btn_3').style.transition= '0.2s'
     
     const cllist =    $('.undef2').classList;
     cllist.add("d-none")  
@@ -131,7 +142,18 @@ $('.btn_2').addEventListener('click',()=>{
     $('.thcm').style.display = 'inline-block'
     $('.tfcm').style.display = 'none'
     $('.thfcm').style.display = 'none'
+
+    $('.btn_2').style.border = '2px solid white'
+    $('.btn_3').style.border = '2px solid red'
+    $('.btn_1').style.border = '2px solid red'
+    $('.btn_2').style.color='white'
+    $('.btn_3').style.color='red'
+    $('.btn_1').style.color='red'
     
+    $('.btn_1').style.transition= '0.2s'
+    $('.btn_2').style.transition= '0.2s'
+    $('.btn_3').style.transition= '0.2s'
+
     const cllist =    $('.undef2').classList;
     cllist.add("d-none")  
     
@@ -140,7 +162,18 @@ $('.btn_3').addEventListener('click',()=>{
     $('.thfcm').style.display = 'inline-block'
     $('.tfcm').style.display = 'none'
     $('.thcm').style.display = 'none'
+
+    $('.btn_3').style.border = '2px solid white'
+    $('.btn_2').style.border = '2px solid red'
+    $('.btn_1').style.border = '2px solid red'
+    $('.btn_3').style.color='white'
+    $('.btn_2').style.color='red'
+    $('.btn_1').style.color='red'
     
+    $('.btn_1').style.transition= '0.2s'
+    $('.btn_2').style.transition= '0.2s'
+    $('.btn_3').style.transition= '0.2s'
+
     const cllist =    $('.undef2').classList;
     cllist.add("d-none")  
     
@@ -150,6 +183,7 @@ $('.submitt').addEventListener('click', ()=>{
     alert('Rahhmat, Yozganingizni 10 minut ichida korib chiqamiz!!') 
 }
 )
+
 
 
 
