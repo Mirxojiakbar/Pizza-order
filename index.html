@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pizza zakaz</title>
+</head>
+
+<body class="bg-dark">
+    <header class="border-bottom text-center">
+        <h1 class="text-danger d-inline">Here You can order PIZZA</h1> <img src="img/Screenshot_45.png" width="50" class="d-inline rounded">
+    </header>
+
+    <section class="row">
+        <section class="left-side col-7 p-5 border-end">
+            <div class="m-a">
+                <strong class="text-danger">Noni qanday bo'lsin?</strong>
+                <select id="list" onchange="getSelectValue()" class="form-select bg-dark text-danger inp-with ps-4 mt-2 ">
+                    <option value="0" class="yupqaa_btn">
+                        yupqa 
+                    </option>
+                    <option value="1" class="ortachaa_btn">
+                        ortacha
+                    </option>
+                    <option value="2" class="qalinn_btn">
+                        qalin
+                    </option>
+                </select>
+            </div>
+
+            <div class="m-a mt-5 ">
+                <strong class="text-danger ">Kattaligi:</strong><br>
+                <button class="def_btn btn_1  mt-2 bg-dark"><strong>25 cm</strong></button>
+                <button class="def_btn btn_2 bg-dark"><strong>30 cm</strong></button>
+                <button class="def_btn btn_3 bg-dark"><strong>35 cm</strong></button>
+            </div>
+
+            <div class="m-a mt-5  mb">
+                <strong class="text-danger mb-2">
+                    Ustiga nima solaylik?
+                </strong><br>
+                <div class="checkbox1">
+                    <input type="checkbox" class="" onclick="isChecked()" id="Pomidorche">
+                    <p class="text-danger d-inline pomidor_check">Pomidor</p>
+                </div>
+
+                <div class="checkbox2">
+                    <input type="checkbox"  class="check_box-r1"
+                    id="Bodring" onclick="isChecked1()">
+                    <p class="text-danger d-inline bodrin_check">Tuzlangan bodring</p>
+                </div>
+                <br>
+                <div class="checkbox3">
+                    <input type="checkbox" class="check_box" onclick="isChecked2()">
+                    <p class="text-danger d-inline kurka_check">Kurka go'shti</p>
+                </div>
+
+                <div class="checkbox4">
+                    <input type="checkbox" class="check_box-r2" onclick="isChecked3()">
+                    <p class="text-danger d-inline qoz_check">Qo'ziqorin</p><br>
+                </div>
+                <br>
+                <div class="checkbox5">
+                    <input type="checkbox" class="check_box-l1" onclick="isChecked4()">
+                    <p class="text-danger d-inline zaytun_check">Zaytun</p> 
+                </div>
+
+                <div class="checkbox6">
+                    <input type="checkbox" class="check_box-r3" onclick="isChecked5()">
+                    <p class="text-danger d-inline qaz_check">Qazi</p>
+                </div>
+            </div>
+            
+            <div class="m-a mt-4">
+                <strong class=" text-danger">Qoshimchalar:</strong><br>
+                <div class="checkbox7">
+                    <input type="checkbox" onclick="isChecked6()" class=" mt-3 check_box-l2">
+                    <p class="text-danger d-inline">Achchiq</p>
+                </div>
+
+                <div class="checkbox8">
+                    <input type="checkbox" onclick="isChecked7()" class="check_box-r ">
+                    <p class="text-danger d-inline">Sosiskali</p>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section class="right-side col-4  p-5">
+            <div class="noni-xaqida">
+                <strong class="text-danger noni">Noni: </strong>
+                <strong class="text-gray
+                undef1">Undifined</strong>
+                <strong class="text-light yupqa">
+                    Yupqa
+                </strong>
+                <strong class="text-light ortacha">
+                    Ortacha
+                </strong>
+                <strong class="text-light qaln">
+                    Qalin
+                </strong>
+            </div>
+            <div>
+                <strong class="text-danger size">
+                    Kattaligi: 
+                </strong>
+                <strong class="text-gray 
+                undef2">Undifined</strong>
+                <p class="text-light tfcm">
+                    25cm
+                </p>
+                <p class="text-light thcm">
+                    30cm
+                </p>
+                <p class="text-light thfcm">
+                    35cm
+                </p>
+            </div>
+            <div>
+                <strong class="text-danger size">
+                    Ustida: 
+                </strong>
+                <strong class="text-gray 
+                undef3">Undifined</strong>
+
+                <p class="text-light " id="Pomidor">
+                    -Pomidor
+                </p>
+                <p class="text-light " id="bodringe">
+                    -Tuzlangan bodring
+                </p>
+                <p class="text-light Kurka">
+                    -Kurka go'shti
+                </p>
+                <p class="text-light Qoziqorin">
+                    -Qo'ziqorin
+                </p>
+                <p class="text-light Zaytun">
+                    -Zaytun
+                </p>
+                <p class="text-light Qazi">
+                    -Qazi
+                </p>
+            </div>
+
+
+            <div>
+                <strong class="text-danger size">
+                    Qoshimcha: 
+                </strong>
+                <strong class="text-gray 
+                undef4">Undifined</strong>
+                <p class="text-light Achiq"> 
+                    -Achiq
+                </p>
+                <p class="text-light Sosiskali">
+                    -Sosiskali
+                </p>
+            </div>
+            
+                <button class="final_btn">
+                    Buyurtma berish!
+                </button>
+                <strong class="text-warning warning_text1">Iltmos Noni kriting va qayta urinib koring!!!!!!!</strong>
+                <strong class="text-warning warning_text2">Iltmos Kattaligini kriting va qayta urinib koring!!!!!!!</strong>
+                <strong class="text-warning warning_text3">Iltmos Ustida nimalar bloishini kriting va qayta urinib koring!!!!!!!</strong>
+                <strong class="text-warning warning_text4">Iltmos Qoshimcha nimadur kriting va qayta urinib koring!!!!!!!</strong>
+
+        </section>  
+    </section>
+    
+    <div class="big ">
+        <h2 class="primary">Pizza Created Succesful</h2>
+        <strong class="text-warning">Sizning pitsiyangiz 7 minut da tayyor boladi</strong>
+        <h1 class="check text-light">Check number: <br><p class="number">555</p></h1>
+    </div>
+    <footer class="footer shadow-lg ">
+        <strong  class="text-danger mt-5">"Nimadur Noto'g'ri ketgan bolsa bisga Murojat qling"</strong><br>
+        <div class="input-group mt-3 w-50 m-auto ">
+            <input type="text" class="form-control " placeholder="Biz Bilan bog'lanish uchun" >
+            <button class="btn btn-outline-secondary submitt text-dark bg-danger" type="button">Submit</button>
+          </div>
+        <div class="row">
+            <div class="col-6 mt-5 pt-3">
+                <strong class="text-danger">Murojatuchun raqamlar:</strong>
+                <p class="text-light">+998 99 890-89-08</p>
+                <p class="text-light">+998 71 242-55-72</p>
+                <p class="text-light">+998 XX XXX-XX-XX</p>
+            </div>
+            <div class="col-6 mt-5 pt-3 ">
+                <strong class="text-danger">Social Media:</strong><br>
+                <a class="text-info " href="https://www.instagram.com/mir.xojiakbar/">Instagram</a><br>
+                <a class="text-info " href="https://web.telegram.org/z/">Telegram</a><br>
+                <a class="text-info " href="https://www.instagram.com/mir.xojiakbar/">Facebook</a><br>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+<script src="js/utils.js"></script>
+<script src="js/main.js"></script>
+
+</html>

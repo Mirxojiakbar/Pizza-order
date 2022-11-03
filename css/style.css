@@ -1,0 +1,217 @@
+*{
+    transition: 3s all;
+}
+.inp-with{
+    width: 200px;
+    border: 3px solid ;
+}
+.m-a{
+    margin-left: 18%;
+}
+
+.def_btn{
+    border: 2px solid red;
+    color: red;
+    height: 70px;
+    width: 70px;
+    border-radius: 100000000%;
+}
+
+.checkbox1{
+    display: inline-block;
+}
+.checkbox2{
+    display: inline-block;
+}
+.checkbox3{
+    display: inline-block;
+}
+.checkbox4{
+    display: inline-block;
+}
+.checkbox5{
+    display: inline-block;
+}
+.checkbox6{
+    display: inline-block;
+}
+.checkbox7{
+    display: inline-block;
+}
+.checkbox8{
+    display: inline-block;
+}
+
+.check_box{
+    margin-right: 10px;
+}
+.check_box-r{
+    margin-left: 11.5vh;
+    margin-right: 10px;
+}
+.check_box-r1{
+    margin-left: 11.5vh;
+    margin-right: 10px;
+}.check_box-r2{
+    margin-left: 6.5vh;
+    margin-right: 10px;
+}
+.check_box-r3{
+    margin-left: 13vh;
+    margin-right: 10px;
+}
+.text-gray{
+    color: gray;
+}
+.final_btn{
+    background: black;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+}
+.warning_text1{
+    display: none;
+    margin-bottom: 50px;
+}
+.warning_text2{
+    display: none;
+    margin-bottom: 50px;
+}
+.warning_text3{
+    display: none;
+    margin-bottom: 50px;
+}
+.warning_text4{
+    display: none;
+    margin-bottom: 50px;
+}
+
+.big{
+    display: none;
+    background: green;
+    text-align: center;
+    padding: 100px;
+}
+
+
+
+
+/* display nones */
+.yupqa{
+    display: none;
+}
+.ortacha{
+    display: none;
+}
+.qaln{
+    display: none;
+}
+
+
+.tfcm{
+    display: none;
+}
+.thcm{
+    display: none;
+}
+.thfcm{
+    display: none;
+}
+
+
+#Pomidor{
+    display: none;
+}
+#bodringe{
+    display: none;
+}
+.Kurka{
+    display: none;
+}
+.Qoziqorin{
+    display: none;
+}
+.Zaytun{
+    display: none;
+}
+.Qazi{
+    display: none;
+}
+.Achiq{
+    display: none;
+}
+.Sosiskali{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+.footer{
+    text-align: center;
+    background: #000;
+    padding: 10px;
+}
+
+
+@media (max-width: 697px) {
+    .col-4{
+        width: 100%;
+    }
+    .col-7{
+        width: 100%;
+    }
+    .right-side{
+        border-top: 2px solid white;
+    }
+    
+    .checkbox1{
+        display: block;
+    }
+    .checkbox2{
+        display: block;
+    }
+    .checkbox3{
+        display: block;
+    }
+    .checkbox4{
+        display: block;
+    }
+    .checkbox5{
+        display: block;
+    }
+    .checkbox6{
+        display: block;
+    }
+    .checkbox7{
+        display: block;
+    }
+    .checkbox8{
+        display: block;
+    }
+
+    .check_box-r{
+        margin-left: 0vh;
+        margin-right: 10px;
+    }
+    .check_box-r1{
+        margin-left: 0vh;
+        margin-right: 10px;
+    }.check_box-r2{
+        margin-left: 0vh;
+        margin-right: 10px;
+    }
+    .check_box-r3{
+        margin-left: 0vh;
+        margin-right: 10px;
+    }
+}
